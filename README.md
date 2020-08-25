@@ -1,1 +1,1 @@
-I guess I technically have a website now or somthing.
+Huh, cool.

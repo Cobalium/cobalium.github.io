@@ -2,21 +2,70 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>Blob's Epic Website</title>
+		<title>Hello, World!</title>
 		<style media="screen">
 			@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Roboto&display=swap');
-			* {
-				font-family: "Roboto";
-				color: #d2dce1;
-				background-color: #16141a;
+			:root {
+				--white1: #ebf2f2;
+				--white: #d2dce1;
+				--white-1: #b1bdcc;
+				--white-2: #8f9fb8;
+				--white-3: #7283a3;
+
+				--black2: #44444d;
+				--black1: #2d2c33;
+				--black: #16141a;
+				--black-1: #0d0a0d;
 			}
-			h1, h2, h3, h4, h5, h6 {
-				font-family: "Baloo 2";
+			html {
+				background: var(--black1);
+				color: #d2dce1;
+				font-family: "Roboto", sans-serif;
+			}
+			a {
+				color: #b388ff;
+				transition-duration: 300ms;
+			}
+			a:hover {
+				color: #d2dce1;
+				transition-duration: 250ms;
+			}
+			h1 {
+				text-shadow: 4px 4px 0px var(--black-1);
+				font-size: 65px;
+			}
+			p {
+				font-size: 20px;
+			}
+			.block {
+        display: flex;
+				background-color: var(--black);
+        align-items:center;
+				margin: 0px;
+				padding: 50px;
+				box-shadow: 4px 4px 0px var(--black-1) inset;
+				text-align: center;
+				border: 4px solid var(--black2);
+				transition-duration: 300ms;
+			}
+			.block:hover {
+				border: 4px solid var(--white);
+				transition-duration: 250ms;
+			}
+			.center {
+				display: block;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Hello, World!</h1>
-		<p>CSS will come later, probably. In the meantime <a href="https://discord.gg/25mYeaW">here</a>'s a link to my Discord server I guess.</p>
+		<div class="block center">
+			<h1>Hello, World!</h1>
+			<p><br></p>
+			<p>There's nothing else here right now...<br>If you want, <a href="https://discord.gg/25mYeaW">here</a>'s a link to my Discord server.</p>
+		</div>
 	</body>
 </html>

@@ -33,15 +33,26 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 90%;
       }
       strong {
         font-size: 1.5em;
+      }
+      a {
+        font-size: 0.75em;
+        color: #b388ff;
+        text-decoration: none;
+        transition: 300ms;
+      }
+      a:hover {
+        color: var(--white1);
+        transition: 250ms;
       }
     </style>
   </head>
   <body>
     <div class="centered">
-    <p>Normally this would say<br><strong>"404 Page Not Found"</strong><br>But you actually have found the 404 page.</p>
+    <p>This should say:<br><strong>"404 Page Not Found"</strong><br>But you actually just found it.<br><br><a href="https://cobalium.github.io/">Click here to return to the main page.</a></p>
     </div>
   </body>
 </html>

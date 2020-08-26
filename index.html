@@ -36,7 +36,7 @@
 				font-size: 65px;
 			}
 			p {
-				font-size: 20px;
+				font-size: 25px;
 				color: inherit;
 			}
 			.block {
@@ -64,9 +64,34 @@
 			.faded {
 				opacity: 50%;
 			}
-			kbd {
-				font-family: "Roboto", sans-serif;
-				opacity: 65%;
+			.sociallinks {
+				background: var(--black);
+				position: absolute;
+				bottom: 15px;
+				margin: 0px;
+  			left: 50%;
+  			transform: translateX(-50%);
+				border: 4px solid var(--black2);
+				transition-duration: 300ms;
+				padding-left: 2px;
+				padding-right: 2px;
+				box-shadow: 4px 4px 0px var(--black-1) inset;
+			}
+			.sociallinks:hover {
+				border: 4px solid var(--white);
+				transition-duration: 250ms;
+			}
+			.linkbutton {
+				margin-left: 2px;
+				margin-right: 2px;
+				margin-top: 4px;
+				margin-bottom: 0px;
+				filter: brightness(500%) grayscale(100%);
+				transition: 250ms;
+			}
+			.linkbutton:hover {
+				filter: brightness(100%) grayscale(0%);
+				transition: 250ms;
 			}
 		</style>
 	</head>
@@ -74,11 +99,14 @@
 		<div class="block center">
 			<h1>Hello, World!</h1>
 			<p>
-				There's nothing else here right now...<br><br>
-				If I gave you this link to contact me, I'm<br>Blob<kbd class="faded>">#8888</kbd> over on Discord.<br><br>
-				If you want, <a href="https://discord.gg/25mYeaW">here</a>'s a link to my server.<br><br>
-				<span class="faded">(Sorry mobile users, I'm still learning<br>so the mobile layout is terrible)<br><br></span>
+				There's besides the links below at the moment.<br>Try checking back later.<br><br>
+				<span class="faded">(I'm aware the mobile layout is terrible.)</span>
 			</p>
+		</div>
+		<div class="sociallinks">
+			<a href="https://discord.gg/25mYeaW"><img src="assets/discord.svg" title="My Discord Server" alt="Discord Link" width="100" class="linkbutton"></a>
+			<a href="https://www.reddit.com/user/Cobalium/"><img src="assets/reddit.svg" title="u/Cobalium on Reddit" alt="Reddit Link" width="100" class="linkbutton"></a>
+			<a href="https://twitter.com/Cobaliumite"><img src="assets/twitter.svg" title="@Cobaliumite on Twitter" alt="Twitter Link" width="100" class="linkbutton"></a>
 		</div>
 	</body>
 </html>

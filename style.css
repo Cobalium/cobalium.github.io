@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap');
+
 :root {
     --white1: #ebf2f2;
     --white: #d2dce1;
@@ -9,4 +11,39 @@
     --black1: #2d2c33;
     --black: #16141a;
     --black-1: #0d0a0d;
+
+    /* In Case Theme Can't be Grabbed */
+    --foreground: var(--white);
+    --background: var(--black);
+    --link-color: #B388FF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: var(--white);
+    --background: var(--black);
+    --link-color: #B388FF;
   }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground: var(--black);
+    --background: var(--white);
+    --link-color: #03A9F4;
+  }
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: var(--link-color);
+}

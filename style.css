@@ -125,16 +125,3 @@ kbd {
   background: var(--background-1);
   border: 1px solid var(--foreground);
 }
-
-@media (hover: none) {
-  a:hover {
-    color: var(--link-color);
-    transition-duration: 300ms;
-  }
-  button:hover {
-    color: var(--foreground1);
-    background: var(--background1);
-    border-radius: 0.5em;
-    transition-duration: 300ms;
-  }
-}

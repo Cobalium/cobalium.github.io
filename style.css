@@ -14,14 +14,22 @@
 
     /* In Case Theme Can't be Grabbed */
     --foreground: var(--white);
+    --foreground1: var(--white1);
+    --foreground-1: var(--white-1);
+    --background1: var(--black1);
     --background: var(--black);
+    --background-1: var(--black-1);
     --link-color: #B388FF;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --foreground: var(--black);
+    --background1: var(--white1);
     --background: var(--white);
+    --background-1: var(--white-1);
+    --foreground1: var(--black1);
+    --foreground: var(--black);
+    --foreground-1: var(--black-1);
     --link-color: #03A9F4;
   }
 }
@@ -29,7 +37,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: var(--white);
+    --foreground1: var(--white1);
+    --foreground-1: var(--white-1);
+    --background1: var(--black1);
     --background: var(--black);
+    --background-1: var(--black-1);
     --link-color: #B388FF;
   }
 }
@@ -41,20 +53,54 @@ html {
   font-size: 18px;
 }
 
+body {
+  margin: 20px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
-a:link, a:visited {
-    color: var(--link-color);
-    transition-duration: 300ms;
-    text-decoration: none;
-    font-weight: bold;
+a, a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 300ms;
 }
 
-a:active, a:hover {
-    color: var(--white);
-    transition-duration: 250ms;
-    text-decoration: none;
-    font-weight: bold;
+a:hover {
+  color: var(--foreground);
+  transition-duration: 250ms;
+}
+
+a:active {
+  color: var(--foreground1);
+  transition-duration: 0ms;
+}
+
+button {
+  color: var(--foreground1);
+  background: var(--background1);
+  font: inherit;
+  margin: 5px 5px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 0.5em;
+  transition-duration: 300ms;
+}
+
+button:hover {
+  color: var(--background-1);
+  background: var(--foreground-1);
+  border-radius: 0.25em;
+  transition-duration: 250ms;
+}
+
+button:active {
+  color: var(--foreground-1);
+  background: var(--foreground1);
+  border-radius: 0.15em;
+  transition-duration: 0ms;
+  cursor: progress;
+
 }

@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&family=Roboto:wght@500;700&display=swap');
 
 :root {
     --white1: #ebf2f2;
@@ -102,5 +102,26 @@ button:active {
   border-radius: 0.15em;
   transition-duration: 0ms;
   cursor: progress;
+}
 
+input {
+  color: var(--foreground1);
+  background: var(--background1);
+  font: inherit;
+  margin: 5px 5px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 0.5em;
+  transition-duration: 300ms;
+  width: 100px;
+  text-align: right;
+}
+
+kbd {
+  font-family: 'Roboto Mono', monospace;
+  padding: 2px 4px;
+  margin: 0px 2px;
+  border-radius: 0.25em;
+  background: var(--background-1);
+  border: 1px solid var(--foreground);
 }

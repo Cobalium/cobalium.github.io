@@ -38,12 +38,23 @@ html {
   font-family: 'Roboto', sans-serif;
   color: var(--foreground);
   background: var(--background);
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
-a {
-  color: var(--link-color);
+a:link, a:visited {
+    color: var(--link-color);
+    transition-duration: 300ms;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active, a:hover {
+    color: var(--white);
+    transition-duration: 250ms;
+    text-decoration: none;
+    font-weight: bold;
 }

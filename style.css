@@ -84,7 +84,7 @@ button {
   font: inherit;
   margin: 5px 5px;
   border: none;
-  padding: 5px 10px;
+  padding: 0.25em 0.5em;
   border-radius: 0.5em;
   transition-duration: 300ms;
 }
@@ -94,6 +94,7 @@ button:hover {
   background: var(--foreground-1);
   border-radius: 0.25em;
   transition-duration: 250ms;
+  cursor: pointer;
 }
 
 button:active {
@@ -101,7 +102,7 @@ button:active {
   background: var(--foreground1);
   border-radius: 0.15em;
   transition-duration: 0ms;
-  cursor: progress;
+  cursor: wait;
 }
 
 input {
@@ -110,7 +111,7 @@ input {
   font: inherit;
   margin: 5px 5px;
   border: none;
-  padding: 5px 10px;
+  padding: 0.25em 0.5em;
   border-radius: 0.5em;
   transition-duration: 300ms;
   width: 100px;
@@ -119,9 +120,32 @@ input {
 
 kbd {
   font-family: 'Roboto Mono', monospace;
-  padding: 2px 4px;
+  padding: 0.1em 0.25em;
   margin: 0px 2px;
   border-radius: 0.25em;
   background: var(--background-1);
   border: 1px solid var(--foreground);
+}
+
+button.free-download-button:after {
+  content: "Added!";
+  display: block;
+  position: fixed;
+  color: var(--background1);
+  background: var(--foreground1);
+  top: 0.25em;
+  right: 0.25em;
+  margin: 5px 5px;
+  border: none;
+  padding: 0.25em 0.5em;
+  border-radius: 0.5em;
+  font-size: 2em;
+  transition: 300ms;
+  transition-delay: 500ms;
+  opacity: 0;
+}
+
+button.free-download-button:active:after {
+  opacity: 1;
+  transition: 0ms;
 }

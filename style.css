@@ -149,3 +149,7 @@ button.free-download-button:active:after {
   opacity: 1;
   transition: 0ms;
 }
+
+.css-loader {
+  display: none;
+}

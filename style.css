@@ -151,5 +151,5 @@ button.free-download-button:active:after {
 }
 
 .css-loader {
-  display: none;
+  display: none !important;
 }

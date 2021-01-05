@@ -4,4 +4,5 @@
 It's not doing much, but hey, it exists.
 
 Here have the SCP black box character to copy and paste:
+
 █

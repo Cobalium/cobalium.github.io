@@ -128,6 +128,10 @@ button:active {
   cursor: wait;
 }
 
+abbr:hover {
+  cursor: help;
+}
+
 input {
   color: var(--foreground1);
   background: var(--background1);

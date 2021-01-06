@@ -128,10 +128,6 @@ button:active {
   cursor: wait;
 }
 
-abbr:hover {
-  cursor: help;
-}
-
 input {
   color: var(--foreground1);
   background: var(--background1);
@@ -153,6 +149,31 @@ kbd {
   background: var(--background-1);
   border: 1px solid var(--foreground);
   font-size: 0.9em;
+}
+
+.corium {
+  text-decoration: underline;
+}
+
+.corium:hover {
+  cursor: help;
+}
+
+.corium::after {
+  content: "?";
+  vertical-align: super;
+  font-size: 0.75em;
+}
+
+.corium:hover::before {
+  content: "Nuclear Reactor Smoothie";
+  position: absolute;
+  transform: translateY(1.5em) translateX(-25%);
+  background: var(--foreground);
+  color: var(--background);
+  padding: 0.1em 0.2em;
+  margin: 0.1em 0.2em;
+  border-radius: 0.25em;
 }
 
 button.free-download-button:after {

@@ -151,6 +151,21 @@ kbd {
   font-size: 0.9em;
 }
 
+.hahafunnytext {
+  width: 300px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0%;
+  z-index: -10;
+  transition: 0ms;
+}
+
+.hahafunnytext:hover {
+  opacity: 25%;
+  transition: 5s;
+}
+
 .corium {
   text-decoration: underline;
 }

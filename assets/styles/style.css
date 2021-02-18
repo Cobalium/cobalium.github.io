@@ -1,0 +1,203 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Root Variables */
+:root {
+  --text: #DEDEDE;
+  --text-alt: #FFFFFF;
+  --background: #121212;
+  --background-alt: #212121;
+  --accent: #B388ff;
+  --accent-alt: #03A9F4;
+}
+
+/* Elements */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+  transition: 500ms;
+}
+
+a:hover {
+  color: var(--text);
+  transition: 250ms;
+}
+
+a:active {
+  color: var(--text);
+  transition: 0ms;
+}
+
+kbd {
+  font-family: 'Roboto Mono', monospace;
+  background: black;
+  padding: 0em 0.2em;
+  border: 0.025em solid var(--text);
+  border-radius: 0.25em;
+}
+
+button {
+  border-radius: 0.5em;
+  padding: 0.15em 0.4em;
+  margin: 0.15em 0.05em;
+  border: none;
+  color: var(--text);
+  background: var(--background-alt);
+  transition: 300ms;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+button:hover {
+  border-radius: 0.25em;
+  background: var(--accent);
+  transition: 250ms;
+}
+
+button.cosmic-latte:hover {
+  color: var(--background);
+  background: #FFF8E7;
+}
+
+button.cosmic-latte:active {
+  color: #FFF8E7;
+  background: #FFF8E7;
+}
+
+button:active {
+  border-radius: 0.10em;
+  color: var(--background);
+  background: var(--text);
+  transition: 0ms;
+}
+
+/* Classes */
+
+.content {
+  margin: 25px;
+}
+
+.header {
+  text-decoration: none;
+}
+
+.links {
+  margin-left: 25px;
+}
+
+.links > h2 {
+  margin: 0.2em 0;
+  text-decoration: none;
+}
+
+.links > h2 > a {
+  margin: 0px;
+  padding: -1em;
+  border-radius: 5em;
+}
+
+.links > h2 > a:hover {
+  background: var(--accent);
+  margin: -0.25em;
+  padding: 0.25em 0.5em;
+  border-radius: 1em;
+}
+
+.links > h2 > a > img {
+  transform: translateY(0.075em);
+  margin: 0px 0.15em 0em 0em;
+  height: 1em;
+}
+
+.free-download-button:active {
+  cursor: wait;
+}
+
+button.free-download-button:after {
+  content: "Added!";
+  display: block;
+  position: fixed;
+  color: var(--text);
+  background: var(--accent);
+  top: 0.25em;
+  right: 0.25em;
+  margin: 5px 5px;
+  border: none;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  font-size: 1.2em;
+  transition: 300ms;
+  transition-delay: 500ms;
+  opacity: 0%;
+}
+
+button.free-download-button:active:after {
+  opacity: 100%;
+  transition: 0ms;
+}
+
+@keyframes alert {
+  0%   {background: #b388ff00;}
+  40%  {background: #b388ff60;}
+  100% {background: #b388ff00;}
+}
+
+#social-links {
+  background: none;
+  transition: background 500ms;
+  margin: -0.2em;
+  padding: 0.2em;
+}
+
+#social-links:target {
+  animation-name: alert;
+  animation-duration: 2s;
+}
+
+.extra > p {
+  opacity: 20%;
+}
+
+/* Lore Page */
+
+.log {
+  transform: scaleY(0%);
+  opacity: 0%;
+  display: none;
+}
+
+.log:target {
+  transform: scaleY(100%);
+  opacity: 100%;
+  display: block;
+}
+
+.log:target ~ .fallback-log {
+  transform: scaleY(0%);
+  opacity: 0%;
+  display: none;
+}
+
+.fallback-log, .log, .lore-header, .lore-footer {
+  margin: auto;
+  width: 75%;
+  padding: 25px;
+  transition: 750ms;
+}

@@ -2,55 +2,66 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Basic Page Information -->
+    <title>Blob's Page</title>
+    <meta name="description" content="Hello, World! Welcome to my part of the internet!">
+    <link rel="icon" type="image/png" href="assets/images/icon.svg">
+
+    <base href="">
+
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="Blob's Page">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Blob's Website">
-    <meta property="og:description" content="Hello, World!">
+    <meta property="og:image" content="assets/images/icon.png">
     <meta property="og:url" content="blobs.ca">
-    <meta property="og:image" content="https://blobs.ca/assets/icons/icon512.png">
-    <title>Hello, World!</title>
-    <link rel="icon" type="image/png" href="assets/icons/icon512.png">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Hello, World! Welcome to my part of the internet!">
+
+    <!-- Importing Import-ant Things -->
+    <link rel="stylesheet" href="assets/styles/normalize.css"> <!-- https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!-- Apparently This is Good to Have -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style media="screen">
-      .css-loader {
-        font-family: sans-serif;
-        position:absolute;
-        display: table;
-        text-align: center;
-        background: #16141a;
-        color: white;
-        top:50%;
-        left:50%;
-        width:500px;
-        height:500px;
-        margin-left:-250px;
-        margin-top:-250px;
-        outline: #16141a 5000px solid;
+      body {
+        font-size: 1.25em;
       }
     </style>
-    <!-- Various Verifications -->
-    <meta name="wot-verification" content="7fae94ef7aeefc303ce6"/>
   </head>
   <body>
-    <!-- Wow look a (not) hidden comment in  the HTML. -->
-    <div class="css-loader"><span class="css-loader-text"><span></div>
-    <h1>Blob's Page <em>- Hello, World!</em></h1>
-    <p>Hi! Welcome to my site! I don't have much here for now, but I'm adding things over time.</p>
-    <p><a href="https://discord.gg/25mYeaW" target="_blank" title="My Discord Server">Discord Server</a><br>
-    My Discord server, where I hold a bi-weekly(ish) art event, I post updates on my resource pack occasionally, and we kinda just chill and stuff.</p>
-    <p><a href="https://www.reddit.com/user/Cobalium/" target="_blank" title="u/Cobalium on Reddit">Reddit</a>, <a href="https://twitter.com/cobaliumite" target="_blank" title="@cobaliumite on Twitter">Twitter</a><br>
-    Two accounts I have but barely ever use.</p>
-    <p><a href="https://blobs.ca/free-downloads/" title="Free Downloads">Free Downloads Page</a><br>
-    If you need some 100% no scam downloads.</p>
-    <p><a href="https://steamcommunity.com/id/Cobalium/myworkshopfiles/?appid=233610&p=1&numperpage=30" target="_blank">Distance Levels</a><br>
-    If you play Distance you could play some of my levels, that'd be pretty neat.</p>
-    <p><a href="404.html" title="404 Page">404 Page</a><br>
-    <!-- You cheated not only the website, but yourself. You didn't grow. You didn't improve. You took a hyperlink and gained nothing. You experienced a hollow click. Nothing was risked and nothing was gained. It's sad that you don't know the difference. -->
-    I don't know why you'd ever click this, but if you want to, I guess you can.</p>
-    <p style="opacity:20%;">There's a neat things I have here, like respecting the system's dark/light theme, and (slightly) animated mobile layout positioning, so that's neat I guess.</p>
-    <p style="opacity:20%;">Cookie Policy: By existing in the same reality as this site you agree to my use of using corium cookies, they're like normal cookies, but made of corium and I ship them do you directly instead of giving them to your broswer.</p>
-    <div class="beneath">
-      <img src="hahafunnytext.png" class="hahafunnytext">
+    <!--
+    You may be wondering, "Blob, why is the entire page in a div?"
+    Good question. To which I answer, "I dunno, felt like it."
+    I do, (or maybe I don't I'm writing this before CSS,) use it for some styling in the CSS.
+
+    You may also be wondering, "Why in the world do you have a billion nested divs?"
+    To which I answer, ":>"
+    -->
+    <div class="content">
+      <h1>Blob's Page</h1>
+        <p>Hello, World! Welcome to my part of the internet!</p>
+      <div class="links">
+        <!-- Hey look the only link that isn't just padding for space. -->
+        <h2><a href="https://discord.gg/25mYeaW"><img src="assets/images/discord.svg"> Discord</a></h2>
+          <p>A Discord server where I do that art event (you know, that one) and also have projects I should be working on but never do. It's also kinda chill, if you like that sorta thing.</p>
+        <!-- This page was sponsored by some random prince in Nigeria. -->
+        <h2><a href="free-downloads"><img src="assets/images/downloads.svg"> Free Downloads Page</a></h2>
+          <p>A place to get some 100% free downloads.</p>
+        <!-- I promise 100% stupidity in my meme levels. -->
+        <h2><a href="https://steamcommunity.com/id/Cobalium/myworkshopfiles/?appid=233610&p=1&numperpage=30"><img src="assets/images/distance.svg"> Distance Workshop</a></h2>
+          <p>If you have Distance, then you could download some of the stuff I've made for it.</p>
+        <!-- I said I don't use these, like, I really don't. I update these dumb comments more often than I use these. And I don't update these comments often. -->
+        <h2><a href="#social-links"><img src="assets/images/social.svg"> Other Social Media</a></h2>
+          <p>Hey look, social media. I don't use it, but it exists, so there's that. <span id="social-links"><a href="https://www.reddit.com/user/Cobalium/" title="u/Cobalium on Reddit">I'm a Reddit link</a>, I'm a PC, and <a href="https://twitter.com/cobaliumite" title="@cobaliumite on Twitter">I'm a Twitter link.</a></span></p>
+        <!-- You cheated not only the website, but yourself. You didn't grow. You didn't improve. You took a hyperlink and gained nothing. You experienced a hollow click. Nothing was risked and nothing was gained. It's sad that you don't know the difference. -->
+        <h2><a href="404.html"><img src="assets/images/404.svg"> 404 Page</a></h2>
+          <p>I don't know why you'd ever click this, but if you want to, I guess you can. It literally redirects back here after 3 seconds.</p>
+      </div>
+      <div class="extra">
+        <!-- Blobs.ca is in no way associated with any of the following: corium, cookies. -->
+        <p>Cookie Policy: By existing in the same reality as this site you agree to my use of using corium cookies, they're like normal cookies, but made of corium and I ship them do you directly instead of giving them to your broswer.</p>
+        <p>Brought to you in part by <a href="lore">Sci</a>.</p>
+      </div>
     </div>
   </body>
 </html>

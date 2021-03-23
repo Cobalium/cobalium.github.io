@@ -197,7 +197,7 @@ button.free-download-button:active:after {
 
 .fallback-log, .log, .lore-header, .lore-footer {
   margin: auto;
-  width: 75%;
+  width: 90%;
   padding: 25px;
   transition: 750ms;
 }

@@ -1,7 +1,9 @@
 /* Importing Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* Root Variables */
+
 :root {
   --text: #DEDEDE;
   --text-alt: #FFFFFF;
@@ -200,4 +202,24 @@ button.free-download-button:active:after {
   width: 90%;
   padding: 25px;
   transition: 750ms;
+}
+
+.log > h2 {
+  color: var(--accent);
+}
+
+.lore-echoes-markup {
+  color: var(--accent);
+}
+
+.lore-footer > a::after {
+  content: "Building Reality";
+  color: var(--text);
+  transition: 750ms;
+}
+
+.lore-footer > a:hover::after {
+  content: "Building Reali-tea";
+  color: var(--accent);
+  transition: 500ms;
 }

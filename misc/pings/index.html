@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Basic Page Information -->
+    <title>Template</title>
+    <meta name="description" content="This is a Template Page">
+    <link rel="icon" type="image/png" href="assets/images/misc.svg">
+    <meta name="theme-color" content="#B388FF">
+
+    <base href="../../">
+
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="Template">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://blobs.ca/assets/images/misc.png">
+    <meta property="og:url" content="blobs.ca">
+    <meta property="og:description" content="This is a Template Page">
+
+    <!-- Importing Import-ant Things -->
+    <link rel="stylesheet" href="assets/styles/normalize.css"> <!-- https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!-- Apparently This is Good to Have -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style media="screen">
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+      * {
+        font-family: "Roboto" !important;
+      }
+
+      body {
+        font-size: 1.25em;
+        background: #36393f;
+      }
+
+      /* I don't normally do this, but part of this page revolves around mimicing CSS elsewhere, and I don't wanna mess up my master sheet. */
+
+      .ping {
+        border-radius: 3px;
+        padding: 0 2px;
+        font-weight: 500;
+      }
+
+      .ping:hover {
+        transition: 50ms;
+        cursor: pointer;
+      }
+
+      .old-ping {
+        color: #738bd7;
+        background: #3c414f;
+      }
+
+      .old-ping:hover {
+        color: #738bd7;
+        background: #3c414f;
+      }
+
+      .new-ping {
+        color: #ffffff;
+        background: #48516e;
+      }
+
+      .new-ping:hover {
+        background: #7289da;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Pings</h1>
+      <p>These are not exact to how they appear in discord, but rather approximately. (Hover does work.)</p>
+      <p>Paragraph of text with an old <span class="ping old-ping">@Mention</span> in it. (Hol up while I get the old hover colours.)</p>
+      <p>Paragraph of text with a new <span class="ping new-ping">@Mention</span> in it.</p>
+    </div>
+  </body>
+</html>

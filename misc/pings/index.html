@@ -32,8 +32,10 @@
       }
 
       body {
-        font-size: 1.25em;
+        color: #ffffff;
+        font-size: 1.5em;
         background: #36393f;
+        font-weight: 400;
       }
 
       /* I don't normally do this, but part of this page revolves around mimicing CSS elsewhere, and I don't wanna mess up my master sheet. */
@@ -67,6 +69,18 @@
         background: #7289da;
       }
 
+      .custom-ping {
+        color: #7289DA;
+        background: #7289DA20;
+        transition: 350ms;
+      }
+
+      .custom-ping:hover {
+        color: #ffffff;
+        background: #7289DA60;
+        transition: 150ms;
+      }
+
     </style>
   </head>
   <body>
@@ -75,6 +89,19 @@
       <p>These are not exact to how they appear in discord, but rather approximately.</p>
       <p>Paragraph of text with an old <span class="ping old-ping">@Mention</span> in it. (Incorrect hover colour, but close.)</p>
       <p>Paragraph of text with a new <span class="ping new-ping">@Mention</span> in it. (Correct hover colour.)</p>
+      <p>On the background the colours have the following contrast ratios:<br>
+        Old: 3.1:1<br>
+        New: 10.18:1<br>
+        However, compared to surrounding text:<br>
+        (Background to Background)<br>
+        Old: 1.13:1<br>
+        New: 1.47:1<br>
+        (Foreground to Foreground)<br>
+        Old: 3.27:1<br>
+        New: 1:1 (Same Colour)<br>
+        The new pings are far more legible on their own, however the old pings are far better at the one thing they're supposed to do, stand out amongst other text. (This does not take the orange background into account for when you yourself are pinged, but that has a very low opacity.)
+      </p>
+      <p>Just for fun here's <span class="ping custom-ping">@Blob</span>'s take on a ping. (Yes it's very similar to the original, but it actually uses 100% blurple instead of 80-90% blurple.)</p>
     </div>
   </body>
 </html>

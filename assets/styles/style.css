@@ -22,6 +22,7 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  font-variation-settings: 'wght' 500;
   color: var(--text);
   background: var(--background);
 }
@@ -29,17 +30,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 500;
+  font-variation-settings: 'wght' 500;
 }
 
 a {
   text-decoration: none;
   color: var(--accent);
-  transition: 500ms;
+  transition: 500ms ease-out;
 }
 
 a:hover {
   color: var(--text);
-  transition: 250ms;
+  transition: 250ms ease-out;
 }
 
 a:active {
@@ -64,6 +66,7 @@ button {
   background: var(--background-alt);
   transition: 300ms;
   font-weight: 600;
+  font-variation-settings: 'wght' 600;
   font-size: 1.2em;
 }
 
